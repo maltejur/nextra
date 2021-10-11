@@ -33,34 +33,32 @@ export default function Navbar({
         </Link>
       </div>
 
-      {flatPageDirectories
-        ? flatPageDirectories.map(page => {
-            if (page.hidden) return null
+      {(config.navlinks || flatPageDirectories || [])
+        .filter(page => !page.hidden)
+        .map(page => {
+          let href = page.href || page.route
 
-            let href = page.route
+          // If it's a directory
+          if (page.children) {
+            href = page.firstChildRoute
+          }
 
-            // If it's a directory
-            if (page.children) {
-              href = page.firstChildRoute
-            }
-
-            return (
-              <Link href={href} key={page.route}>
-                <a
-                  className={cn(
-                    'no-underline whitespace-nowrap mr-4 hidden md:inline-block',
-                    page.route === activeRoute ||
-                      activeRoute.startsWith(page.route + '/')
-                      ? 'text-current'
-                      : 'text-gray-500'
-                  )}
-                >
-                  {page.title}
-                </a>
-              </Link>
-            )
-          })
-        : null}
+          return (
+            <Link href={href} key={page.route}>
+              <a
+                className={cn(
+                  'no-underline whitespace-nowrap mr-4 hidden md:inline-block',
+                  page.route === activeRoute ||
+                    activeRoute.startsWith(page.route + '/')
+                    ? 'text-current'
+                    : 'text-gray-500'
+                )}
+              >
+                {page.title}
+              </a>
+            </Link>
+          )
+        })}
 
       <div className="flex-1">
         <div className="hidden md:inline-block mr-2">
@@ -93,6 +91,8 @@ export default function Navbar({
             <GitHubIcon height={24} />
           )}
         </a>
+      ) : config.projectIcons ? (
+        renderComponent(config.projectIcons, { locale })
       ) : null}
 
       <button className="block md:hidden p-2" onClick={() => setMenu(!menu)}>

@@ -1,5 +1,5 @@
 {
-  "name": "nextra-monorepo",
+  "name": "nextra-monorepo-patch-maltejur",
   "private": true,
   "workspaces": [
     "packages/nextra",
@@ -9,9 +9,9 @@
     "examples/blog"
   ],
   "scripts": {
-    "build:core": "yarn workspace nextra run build",
-    "build:theme-docs": "yarn workspace nextra-theme-docs run build",
-    "build:theme-blog": "yarn workspace nextra-theme-blog run build"
+    "build:core": "yarn workspace nextra-patch-maltejur run build",
+    "build:theme-docs": "yarn workspace nextra-theme-docs-patch-maltejur run build",
+    "build:theme-blog": "yarn workspace nextra-theme-blog-patch-maltejur run build"
   },
   "devDependencies": {
     "prettier": "^2.2.1"
