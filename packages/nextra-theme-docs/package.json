@@ -1,6 +1,6 @@
 {
   "name": "nextra-theme-docs-patch-maltejur",
-  "version": "1.2.6-7",
+  "version": "1.2.6-8",
   "description": "A Nextra theme for documentation sites.",
   "main": "index.js",
   "repository": "https://github.com/maltejur/nextra/tree/core-patch-maltejur/packages/nextra-theme-docs",
