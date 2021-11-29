@@ -1,8 +1,9 @@
 {
   "name": "nextra-theme-docs-patch-maltejur",
-  "version": "1.2.6-8",
+  "version": "2.0.0-beta.2-patch.1",
   "description": "A Nextra theme for documentation sites.",
   "main": "index.js",
+  "module": "index.js",
   "repository": "https://github.com/maltejur/nextra/tree/core-patch-maltejur/packages/nextra-theme-docs",
   "author": "Shu Ding <g@shud.in>",
   "license": "MIT",
@@ -15,15 +16,15 @@
   ],
   "scripts": {
     "dev": "yarn dev:layout & yarn dev:tailwind",
-    "build": "yarn run build:clean && yarn run build:tailwind && yarn run build:layout",
-    "build:clean": "rm -rf dist",
+    "build": "yarn run build:tailwind && yarn run build:layout",
+    "build:layout": "node scripts/build.js",
     "build:tailwind": "NODE_ENV=production yarn postcss src/styles.css -o style.css --verbose",
-    "build:layout": "NODE_ENV=production microbundle src/*.js src/**/*.js -f cjs -o dist --no-sourcemap --jsx React.createElement --target node",
-    "dev:layout": "microbundle watch src/*.js src/**/*.js -f cjs -o dist --no-sourcemap --jsx React.createElement --target node",
-    "dev:tailwind": "TAILWIND_MODE=watch yarn postcss src/styles.css -o style.css -w --verbose"
+    "dev:layout": "node scripts/dev.js",
+    "dev:tailwind": "TAILWIND_MODE=watch yarn postcss src/styles.css -o style.css -w --verbose",
+    "prepublishOnly": "rm -rf dist && yarn build"
   },
   "dependencies": {
-    "@mdx-js/react": "^1.6.16",
+    "@mdx-js/react": "^2.0.0-rc.2",
     "@reach/skip-nav": "^0.11.2",
     "classnames": "^2.2.6",
     "focus-visible": "^5.1.0",
@@ -46,7 +47,7 @@
   "devDependencies": {
     "autoprefixer": "^10.0.2",
     "cssnano": "^4.1.10",
-    "microbundle": "^0.12.4",
+    "esbuild": "^0.14.0",
     "postcss": "^8.2.1",
     "postcss-cli": "^8.3.0",
     "tailwindcss": "^2.2.4"

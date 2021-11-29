@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import dynamic from 'next/dynamic'
+import { ThemeProvider, useTheme } from 'next-themes'
 
 import Meta from './meta'
 import Nav from './nav'
@@ -26,28 +27,28 @@ const Layout = ({
   navPages,
   postList,
   back,
-  title,
-  comments,
-  children
+  pageTitle,
+  titleNode,
+  contentNodes,
+  comments
 }) => {
-  const [titleNode, contentNodes] = getTitle(children)
   const type = meta.type || 'post'
 
   return (
     <React.Fragment>
       <Head>
         <title>
-          {title}
+          {pageTitle}
           {config.titleSuffix}
         </title>
-        {config.head || null}
+        {config.head ? config.head({ title, meta }) : null}
       </Head>
-      <article className="container prose prose-sm md:prose">
-        {titleNode}
+      <article className="container prose prose-sm md:prose dark:prose-dark">
+        {titleNode || <h1>{pageTitle}</h1>}
         {type === 'post' ? (
           <Meta {...meta} back={back} config={config} />
         ) : (
-          <Nav navPages={navPages} />
+          <Nav navPages={navPages} config={config} />
         )}
         <MDXTheme>
           {contentNodes}
@@ -63,6 +64,8 @@ const Layout = ({
 }
 
 export default (opts, _config) => {
+  const router = useRouter()
+  const { theme, resolvedTheme } = useTheme()
   const config = Object.assign(
     {
       readMore: 'Read More →',
@@ -141,14 +144,12 @@ export default (opts, _config) => {
   }
 
   return props => {
-    const router = useRouter()
     const { query } = router
-
-    const type = opts.meta.type || 'post'
     const tagName = type === 'tag' ? query.tag : null
 
-    const [titleNode] = getTitle(props.children)
-    const title =
+    const content = props.children.type()
+    const [titleNode, contentNodes] = getTitle(content)
+    const pageTitle =
       opts.meta.title ||
       (typeof tagName === 'undefined'
         ? null
@@ -173,7 +174,9 @@ export default (opts, _config) => {
               host: config.cusdis.host || 'https://cusdis.com',
               appId: config.cusdis.appId,
               pageId: router.pathname,
-              pageTitle: title
+              pageTitle,
+              theme:
+                theme === 'dark' || resolvedTheme === 'dark' ? 'dark' : 'light'
             }}
           />
         )
@@ -227,16 +230,24 @@ export default (opts, _config) => {
     ) : null
 
     return (
-      <Layout
-        config={config}
-        postList={postList}
-        navPages={navPages}
-        back={back}
-        title={title}
-        comments={comments}
-        {...opts}
-        {...props}
-      />
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem={true}
+      >
+        <Layout
+          config={config}
+          postList={postList}
+          navPages={navPages}
+          back={back}
+          pageTitle={pageTitle}
+          titleNode={titleNode}
+          contentNodes={contentNodes}
+          comments={comments}
+          {...opts}
+          {...props}
+        />
+      </ThemeProvider>
     )
   }
 }

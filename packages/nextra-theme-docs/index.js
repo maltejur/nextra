@@ -1,1 +1,1 @@
-module.exports = require('./dist/nextra-theme-docs-patch-maltejur')
+export { default } from './dist/index'

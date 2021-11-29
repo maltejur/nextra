@@ -1,6 +1,6 @@
 {
   "name": "nextra-patch-maltejur",
-  "version": "1.1.0",
+  "version": "2.0.0-beta.2",
   "description": "Next.js and MDX based site generator.",
   "main": "index.js",
   "files": [
@@ -12,24 +12,25 @@
   "repository": "https://github.com/maltejur/nextra/tree/core-patch-maltejur/packages/nextra",
   "license": "MIT",
   "scripts": {
-    "build": "microbundle src/index.js src/ssg.js src/loader.js -o dist --no-sourcemap --target=node",
-    "dev": "microbundle watch src/index.js src/ssg.js src/loader.js -o dist --no-sourcemap --target=node"
+    "build": "node scripts/build.js",
+    "dev": "node scripts/dev.js",
+    "prepublishOnly": "rm -rf dist && yarn build"
   },
   "dependencies": {
-    "@mdx-js/loader": "^2.0.0-next.9",
+    "@mdx-js/loader": "^2.0.0-rc.2",
+    "@mdx-js/mdx": "^2.0.0-rc.2",
     "download": "^8.0.0",
     "graceful-fs": "^4.2.6",
     "gray-matter": "^4.0.3",
     "loader-utils": "^2.0.0",
-    "remark": "^13.0.0",
     "remark-gfm": "^1.0.0",
-    "slash": "^3.0.0",
-    "strip-markdown": "^4.0.0"
+    "remark-mdx-code-meta": "^1.0.0",
+    "slash": "^3.0.0"
   },
   "peerDependencies": {
     "react": ">=16.13.1"
   },
   "devDependencies": {
-    "microbundle": "^0.12.4"
+    "esbuild": "^0.14.0"
   }
 }

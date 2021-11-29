@@ -45,7 +45,7 @@ function Body({ meta, config, toc, filepathWithName, navLinks, children }) {
         </article>
       ) : (
         <article className="docs-container relative pt-16 pb-16 px-6 md:px-8 w-full max-w-full flex min-w-0">
-          <main className="max-w-screen-md mx-auto pt-4 z-10 min-w-0">
+          <main className="max-w-screen-md mx-auto pt-4 z-10 min-w-0 w-full">
             <Theme>{children}</Theme>
             <Footer config={config} filepathWithName={filepathWithName}>
               {navLinks}
@@ -56,6 +56,13 @@ function Body({ meta, config, toc, filepathWithName, navLinks, children }) {
       )}
     </React.Fragment>
   )
+}
+
+const getHeadline = (titles, meta) => {
+  const titleEl = titles.find(child => child.type === 'h1')
+  const headline =
+    meta.title || (titleEl ? innerText(titleEl.props.children) : 'Untitled')
+  return headline
 }
 
 const Layout = ({ filename, config: _config, pageMap, meta, children }) => {
@@ -75,20 +82,16 @@ const Layout = ({ filename, config: _config, pageMap, meta, children }) => {
     directories
   } = useDirectoryInfo(pageMap)
 
+  const content = children.type()
   const filepath = route.slice(0, route.lastIndexOf('/') + 1)
   const filepathWithName = filepath + filename
-  const titles = React.Children.toArray(children).filter(
-    child => child.props && titleType.includes(child.props.mdxType)
-  )
-  const titleEl = titles.find(
-    child => child.props && child.props.mdxType === 'h1'
-  )
-  const title =
-    meta.title || (titleEl ? innerText(titleEl.props.children) : 'Untitled')
+  const titles =
+    content.props.children.filter?.(child => titleType.includes(child.type)) ||
+    []
+  const headline = getHeadline(titles, meta)
   const anchors = titles
-    .filter(child => child.props && (config.floatTOC || child.props.mdxType === 'h2'))
+    .filter(child => child.props && (config.floatTOC || child.type === 'h2'))
     .map(child => child.props.children)
-
   const isRTL = useMemo(() => {
     if (!config.i18n) return config.direction === 'rtl' || null
     const localeConfig = config.i18n.find(l => l.locale === locale)
@@ -100,7 +103,7 @@ const Layout = ({ filename, config: _config, pageMap, meta, children }) => {
   if (activeType === 'nav') {
     return (
       <React.Fragment>
-        <Head config={config} title={title} locale={locale} meta={meta} />
+        <Head config={config} title={headline} locale={locale} meta={meta} />
         <MenuContext.Provider
           value={{
             menu,
@@ -135,7 +138,7 @@ const Layout = ({ filename, config: _config, pageMap, meta, children }) => {
                   filepathWithName={filepathWithName}
                   navLinks={null}
                 >
-                  {children}
+                  {content}
                 </Body>
               </div>
             </ActiveAnchor>
@@ -148,7 +151,7 @@ const Layout = ({ filename, config: _config, pageMap, meta, children }) => {
   // Docs layout
   return (
     <React.Fragment>
-      <Head config={config} title={title} locale={locale} meta={meta} />
+      <Head config={config} title={headline} locale={locale} meta={meta} />
       <MenuContext.Provider
         value={{
           menu,
@@ -180,7 +183,7 @@ const Layout = ({ filename, config: _config, pageMap, meta, children }) => {
                 meta={meta}
                 config={config}
                 filepathWithName={filepathWithName}
-                toc={<ToC titles={config.floatTOC ? titles: null}/>}
+                toc={<ToC titles={config.floatTOC ? titles : null} />}
                 navLinks={
                   <NavLinks
                     flatDirectories={flatDocsDirectories}
