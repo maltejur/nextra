@@ -86,7 +86,7 @@ const Layout = ({ filename, config: _config, pageMap, meta, children }) => {
   const filepath = route.slice(0, route.lastIndexOf('/') + 1)
   const filepathWithName = filepath + filename
   const titles =
-    content.props.children.filter?.(child => titleType.includes(child.type)) ||
+    content.props.children?.filter?.(child => titleType.includes(child.type)) ||
     []
   const headline = getHeadline(titles, meta)
   const anchors = titles
