@@ -1,6 +1,6 @@
 {
   "name": "nextra-patch-maltejur",
-  "version": "2.0.0-beta.2",
+  "version": "2.0.0-beta.5-patch.1",
   "description": "Next.js and MDX based site generator.",
   "main": "index.js",
   "files": [
