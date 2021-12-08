@@ -7,19 +7,20 @@ import renderComponent from './utils/render-component'
 import { getFSRoute } from './utils/get-fs-route'
 import useMenuContext from './utils/menu-context'
 
+import { useConfig } from './config'
 import Search from './search'
 import StorkSearch from './stork-search'
-import GitHubIcon from './github-icon'
-import DiscordIcon from './discord-icon'
+import GitHubIcon from './icons/github'
+import DiscordIcon from './icons/discord'
 import ThemeSwitch from './theme-switch'
 import LocaleSwitch from './locale-switch'
 
 export default function Navbar({
-  config,
   isRTL,
   flatDirectories,
   flatPageDirectories
 }) {
+  const config = useConfig()
   const { locale, asPath } = useRouter()
   const activeRoute = getFSRoute(asPath, locale).split('#')[0]
   const { menu, setMenu } = useMenuContext()

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import cn from 'classnames'
 import Slugger from 'github-slugger'
 import { useRouter } from 'next/router'
@@ -11,6 +11,7 @@ import useMenuContext from './utils/menu-context'
 
 import Search from './search'
 import StorkSearch from './stork-search'
+import { useConfig } from './config'
 
 const TreeState = new Map()
 
@@ -132,12 +133,19 @@ export default function Sidebar({
   directories,
   flatDirectories,
   fullDirectories,
-  anchors = [],
   mdShow = true,
-  config
+  headings = []
 }) {
-  const { menu } = useMenuContext()
+  const config = useConfig()
+  const anchors = useMemo(
+    () =>
+      headings
+        .filter(child => child.props && child.type === 'h2')
+        .map(child => child.props.children),
+    [headings]
+  )
 
+  const { menu } = useMenuContext()
   useEffect(() => {
     if (menu) {
       document.body.classList.add('overflow-hidden')
@@ -170,10 +178,23 @@ export default function Sidebar({
             ) : null)}
         </div>
         <div className="hidden md:block">
-          <Menu directories={directories} anchors={anchors} />
+          <Menu
+            directories={directories}
+            anchors={
+              // When the viewport size is larger than `md`, hide the anchors in
+              // the sidebar when `floatTOC` is enabled.
+              config.floatTOC ? [] : anchors
+            }
+          />
         </div>
         <div className="md:hidden">
-          <Menu directories={fullDirectories} anchors={anchors} />
+          <Menu
+            directories={fullDirectories}
+            anchors={
+              // Always show the anchor links on mobile (`md`).
+              anchors
+            }
+          />
         </div>
       </div>
     </aside>
