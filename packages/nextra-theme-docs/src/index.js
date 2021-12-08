@@ -74,13 +74,9 @@ const Layout = ({ filename, pageMap, meta, children }) => {
   const content = children.type()
   const filepath = route.slice(0, route.lastIndexOf('/') + 1)
   const filepathWithName = filepath + filename
-  const titles =
-    content.props.children?.filter?.(child => titleType.includes(child.type)) ||
-    []
-  const headline = getHeadline(titles, meta)
-  const anchors = titles
-    .filter(child => child.props && (config.floatTOC || child.type === 'h2'))
-    .map(child => child.props.children)
+  const headings = getHeadings(content.props.children)
+  const title = meta.title || getTitle(headings) || 'Untitled'
+
   const isRTL = useMemo(() => {
     if (!config.i18n) return config.direction === 'rtl' || null
     const localeConfig = config.i18n.find(l => l.locale === locale)
