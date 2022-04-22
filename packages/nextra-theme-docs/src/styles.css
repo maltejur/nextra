@@ -169,6 +169,7 @@ h2 a {
   input {
     @apply text-gray-900 bg-black bg-opacity-[.01] ring-1 ring-gray-200;
     @apply dark:text-gray-300 dark:bg-gray-50 dark:bg-opacity-10 dark:ring-0;
+    @apply dark:focus:bg-dark dark:hover:bg-opacity-[.06] dark:focus:ring-1 dark:focus:ring-gray-100 dark:focus:ring-opacity-20;
     @apply dark:border-gray-800;
   }
   .dark input {

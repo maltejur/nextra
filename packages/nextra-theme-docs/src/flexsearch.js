@@ -378,7 +378,7 @@ export default function Search() {
             setSearch(e.target.value)
             setShow(true)
           }}
-          className="block w-full px-3 py-2 leading-tight rounded-lg appearance-none focus:outline-none focus:ring-1 focus:ring-gray-200 focus:bg-white hover:bg-opacity-0 transition-colors dark:focus:bg-dark dark:focus:ring-gray-100 dark:focus:ring-opacity-20"
+          className="block w-full px-3 py-2 leading-tight rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-blue-300 focus:bg-white hover:bg-opacity-0 transition dark:transition-none dark:transition-color"
           type="search"
           placeholder={renderComponent(
             config.searchPlaceholder,
