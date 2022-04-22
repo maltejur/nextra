@@ -11,6 +11,7 @@ import useMenuContext from './utils/menu-context'
 
 import Search from './search'
 import StorkSearch from './stork-search'
+import FlexSearch from './flexsearch'
 import { useConfig } from './config'
 
 const TreeState = new Map()
@@ -171,6 +172,8 @@ export default function Sidebar({
             (config.search ? (
               config.unstable_stork ? (
                 <StorkSearch />
+              ) : config.unstable_flexsearch ? (
+                <FlexSearch />
               ) : (
                 <Search directories={flatDirectories} />
               )

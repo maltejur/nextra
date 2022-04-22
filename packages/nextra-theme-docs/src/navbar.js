@@ -10,6 +10,7 @@ import useMenuContext from './utils/menu-context'
 import { useConfig } from './config'
 import Search from './search'
 import StorkSearch from './stork-search'
+import FlexSearch from "./flexsearch"
 import GitHubIcon from './icons/github'
 import DiscordIcon from './icons/discord'
 import ThemeSwitch from './theme-switch'
@@ -68,6 +69,8 @@ export default function Navbar({
             (config.search ? (
               config.unstable_stork ? (
                 <StorkSearch />
+              ) : config.unstable_flexsearch ? (
+                <FlexSearch />
               ) : (
                 <Search directories={flatDirectories} />
               )

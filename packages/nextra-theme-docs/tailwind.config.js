@@ -1,6 +1,8 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   mode: 'jit',
-  purge: ['./src/**/*.js', './src/**/*.css'],
+  content: ['./src/**/*.js', './src/**/*.css'],
   theme: {
     screens: {
       sm: '640px',
@@ -20,7 +22,9 @@ module.exports = {
       current: 'currentColor',
       black: '#000',
       white: '#fff',
+      neutral: colors.neutral,
       gray: {
+        50: '#fcfcfc',
         100: '#f7fafc',
         200: '#edf2f7',
         300: '#e2e8f0',
