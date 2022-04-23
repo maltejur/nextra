@@ -47,7 +47,7 @@
     "grapheme-splitter": "^1.0.4",
     "intersection-observer": "^0.12.0",
     "match-sorter": "^4.2.0",
-    "next-themes": "^0.0.8",
+    "next-themes": "^0.1.1",
     "parse-git-url": "^1.0.1",
     "prettier": "^2.4.1",
     "prism-react-renderer": "^1.1.1",
