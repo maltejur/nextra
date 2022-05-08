@@ -232,62 +232,6 @@ const Pre = ({ children, ...props }) => {
   )
 }
 
-const Code = ({ children, className }) => {
-  const { highlight, ...props } = useContext(PreContext)
-
-  const highlightedRanges = useMemo(() => {
-    return highlight
-      ? highlight.split(',').map(r => {
-          if (r.includes('-')) {
-            return r.split('-')
-          }
-          return +r
-        })
-      : []
-  }, [highlight])
-
-  if (!className) return <code {...props}>{children}</code>
-
-  // https://mdxjs.com/guides/syntax-highlighting#all-together
-  const language = className.replace(/language-/, '')
-  return (
-    <Highlight
-      {...defaultProps}
-      code={children.trim()}
-      language={language}
-      theme={THEME}
-    >
-      {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <code className={className} style={{ ...style }}>
-          {tokens.map((line, i) => (
-            <div
-              key={i}
-              {...getLineProps({ line, key: i })}
-              style={
-                highlightedRanges.some(r =>
-                  Array.isArray(r)
-                    ? r[0] <= i + 1 && i + 1 <= r[1]
-                    : r === i + 1
-                )
-                  ? {
-                      background: 'var(--c-highlight)',
-                      margin: '0 -1rem',
-                      padding: '0 1rem'
-                    }
-                  : null
-              }
-            >
-              {line.map((token, key) => (
-                <span key={key} {...getTokenProps({ token, key })} />
-              ))}
-            </div>
-          ))}
-        </code>
-      )}
-    </Highlight>
-  )
-}
-
 const Table = ({ children }) => {
   return (
     <div className="table-container">
@@ -304,7 +248,6 @@ const getComponents = args => ({
   h6: H6(args),
   a: A,
   pre: Pre,
-  code: Code,
   table: Table
 })
 

@@ -253,7 +253,7 @@ h2 a {
     -webkit-box-orient: vertical;
   }
   .nextra-search.nextra-flexsearch ul {
-    max-height: min(calc(50vh - 11rem - env(safe-area-inset-bottom)), 400px);
+    max-height: min(calc(100vh - 11rem - env(safe-area-inset-bottom)), 400px);
   }
 }
 
