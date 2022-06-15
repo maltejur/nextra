@@ -188,7 +188,7 @@ export default (opts, config) => {
   return props => {
     return (
       <ThemeConfigContext.Provider value={extendedConfig}>
-        <ThemeProvider attribute="class">
+        <ThemeProvider attribute="class" enableSystem={false}>
           <Layout {...opts} {...props} />
         </ThemeProvider>
       </ThemeConfigContext.Provider>
