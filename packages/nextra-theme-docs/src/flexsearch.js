@@ -408,7 +408,7 @@ export default function Search() {
         as={React.Fragment}
         leave="transition duration-100"
         leaveFrom="opacity-100"
-        leaveTo="opacity-0"
+        leaveTo="opacity-0 pointer-events-none"
       >
         <ul className="absolute z-20 px-0 py-2.5 m-0 mt-2 top-full rounded-xl overflow-hidden overscroll-contain shadow-xl list-none">
           {loading ? (
