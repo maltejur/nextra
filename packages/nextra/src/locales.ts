@@ -1,17 +1,22 @@
-import { NextResponse } from 'next/server'
-import type { NextRequest } from 'next/server'
+import { NextResponse, NextRequest } from 'next/server'
 
-const PUBLIC_FILE = /\.(.*)$/
-
-type LegacyMiddlewareCookies = { [key: string]: string }
+type LegacyMiddlewareCookies = Record<string, string>
 type StableMiddlewareCookies = Map<string, string>
+type Next13MiddlewareCookies = NextRequest['cookies']
 
 function getCookie(
-  cookies: LegacyMiddlewareCookies | StableMiddlewareCookies,
+  cookies:
+    | LegacyMiddlewareCookies
+    | StableMiddlewareCookies
+    | Next13MiddlewareCookies,
   key: string
-) {
+): string | undefined {
   if (typeof cookies.get === 'function') {
-    return cookies.get(key)
+    const cookie = cookies.get(key)
+    if (cookie && typeof cookie === 'object') {
+      return cookie.value
+    }
+    return cookie
   }
   return (cookies as LegacyMiddlewareCookies)[key]
 }
@@ -20,10 +25,11 @@ export function locales(request: NextRequest) {
   const { nextUrl } = request
 
   const shouldHandleLocale =
-    !PUBLIC_FILE.test(nextUrl.pathname) &&
-    !nextUrl.pathname.includes('/api/') &&
-    !nextUrl.pathname.includes('/_next/') &&
-    nextUrl.locale !== ''
+    !/^\/(api|_next)\//.test(nextUrl.pathname) &&
+    !/\.(jpe?g|svg|png|webmanifest)$/.test(nextUrl.pathname) &&
+    nextUrl.locale !== '' &&
+    // not Server-Side Error page
+    nextUrl.pathname !== '/500'
 
   if (!shouldHandleLocale) return
 
@@ -35,7 +41,7 @@ export function locales(request: NextRequest) {
 
   // remove pathname, search, and extra slashes from url
   localeInPath = localeInPath
-    .replace((nextUrl.pathname + nextUrl.search), '')
+    .replace(nextUrl.pathname + nextUrl.search, '')
     .replace('/', '')
 
   let finalLocale
@@ -43,14 +49,14 @@ export function locales(request: NextRequest) {
     // If a locale is explicitly set, we don't do any modifications.
     finalLocale = localeInPath
   } else {
-    // If there is a locale cookie, we try to use it. If it doesn't exist or
+    // If there is a locale cookie, we try to use it. If it doesn't exist, or
     // it's invalid, `nextUrl.locale` will be automatically figured out by Next
     // via the `accept-languages` header.
     const clientLocale = getCookie(request.cookies, 'NEXT_LOCALE')
     if (clientLocale) {
       try {
         nextUrl.locale = clientLocale
-      } catch (err) {
+      } catch {
         // The locale from the cookie isn't valid.
         // https://github.com/vercel/next.js/blob/e5dee17f776dcc79ebb269f7b7341fa6e2b6c3f1/packages/next/server/web/next-url.ts#L122-L129
       }

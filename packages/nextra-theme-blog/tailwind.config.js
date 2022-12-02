@@ -1,6 +1,8 @@
 const colors = require('tailwindcss/colors')
+
 module.exports = {
-  content: ['./src/**/*.{js,tsx}'],
+  prefix: 'nx-',
+  content: ['./src/**/*.{js,tsx,jsx}', '../nextra/src/components/*.tsx'],
   theme: {
     colors: {
       transparent: 'transparent',
@@ -55,5 +57,5 @@ module.exports = {
     }
   },
   plugins: [require('@tailwindcss/typography')],
-  darkMode: 'class'
+  darkMode: ['class', 'html[class~="dark"]']
 }

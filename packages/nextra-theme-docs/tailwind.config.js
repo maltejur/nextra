@@ -10,7 +10,12 @@ const makePrimaryColor =
   }
 
 module.exports = {
-  content: ['./src/**/*.{js,tsx}'],
+  prefix: 'nx-',
+  content: [
+    './src/**/*.tsx',
+    '../nextra/src/icons/*.tsx',
+    '../nextra/src/components/*.tsx'
+  ],
   theme: {
     screens: {
       sm: '640px',
@@ -44,7 +49,7 @@ module.exports = {
       neutral: colors.neutral,
       red: colors.red,
       orange: colors.orange,
-	  blue: colors.blue,
+      blue: colors.blue,
       yellow: colors.yellow,
       primary: {
         50: makePrimaryColor(97),
@@ -67,5 +72,5 @@ module.exports = {
       }
     }
   },
-  darkMode: 'class'
+  darkMode: ['class', 'html[class~="dark"]']
 }

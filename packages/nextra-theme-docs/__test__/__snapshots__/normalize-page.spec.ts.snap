@@ -1,5 +1,194 @@
 // Vitest Snapshot v1
 
+exports[`normalize-page > /404 page 1`] = `
+{
+  "activeIndex": 0,
+  "activePath": [],
+  "activeThemeContext": {
+    "breadcrumb": true,
+    "collapsed": false,
+    "footer": true,
+    "layout": "default",
+    "navbar": true,
+    "pagination": true,
+    "sidebar": true,
+    "timestamp": true,
+    "toc": true,
+    "typesetting": "default",
+  },
+  "activeType": undefined,
+  "directories": [
+    {
+      "kind": "MdxPage",
+      "name": "index",
+      "route": "/",
+      "title": "Introduction",
+      "type": "doc",
+    },
+    {
+      "kind": "MdxPage",
+      "name": "get-started",
+      "route": "/get-started",
+      "title": "Get Started",
+      "type": "doc",
+    },
+  ],
+  "docsDirectories": [
+    {
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
+      "name": "index",
+      "route": "/",
+      "title": "Introduction",
+      "type": "doc",
+    },
+    {
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
+      "name": "get-started",
+      "route": "/get-started",
+      "title": "Get Started",
+      "type": "doc",
+    },
+  ],
+  "flatDirectories": [
+    {
+      "kind": "MdxPage",
+      "name": "index",
+      "route": "/",
+      "title": "Introduction",
+      "type": "doc",
+    },
+    {
+      "kind": "MdxPage",
+      "name": "get-started",
+      "route": "/get-started",
+      "title": "Get Started",
+      "type": "doc",
+    },
+  ],
+  "flatDocsDirectories": [
+    {
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
+      "name": "index",
+      "route": "/",
+      "title": "Introduction",
+      "type": "doc",
+    },
+    {
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
+      "name": "get-started",
+      "route": "/get-started",
+      "title": "Get Started",
+      "type": "doc",
+    },
+  ],
+  "topLevelNavbarItems": [],
+}
+`;
+
+exports[`normalize-page > /500 page 1`] = `
+{
+  "activeIndex": 0,
+  "activePath": [
+    {
+      "kind": "MdxPage",
+      "name": "500",
+      "route": "/500",
+      "theme": {
+        "layout": "raw",
+      },
+      "title": "500",
+      "type": "page",
+    },
+  ],
+  "activeThemeContext": {
+    "breadcrumb": true,
+    "collapsed": false,
+    "footer": true,
+    "layout": "raw",
+    "navbar": true,
+    "pagination": true,
+    "sidebar": true,
+    "timestamp": true,
+    "toc": true,
+    "typesetting": "default",
+  },
+  "activeType": "page",
+  "directories": [
+    {
+      "kind": "MdxPage",
+      "name": "index",
+      "route": "/",
+      "title": "Introduction",
+      "type": "doc",
+    },
+    {
+      "kind": "MdxPage",
+      "name": "get-started",
+      "route": "/get-started",
+      "title": "Get Started",
+      "type": "doc",
+    },
+  ],
+  "docsDirectories": [
+    {
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
+      "name": "index",
+      "route": "/",
+      "title": "Introduction",
+      "type": "doc",
+    },
+    {
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
+      "name": "get-started",
+      "route": "/get-started",
+      "title": "Get Started",
+      "type": "doc",
+    },
+  ],
+  "flatDirectories": [
+    {
+      "kind": "MdxPage",
+      "name": "index",
+      "route": "/",
+      "title": "Introduction",
+      "type": "doc",
+    },
+    {
+      "kind": "MdxPage",
+      "name": "get-started",
+      "route": "/get-started",
+      "title": "Get Started",
+      "type": "doc",
+    },
+  ],
+  "flatDocsDirectories": [
+    {
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
+      "name": "index",
+      "route": "/",
+      "title": "Introduction",
+      "type": "doc",
+    },
+    {
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
+      "name": "get-started",
+      "route": "/get-started",
+      "title": "Get Started",
+      "type": "doc",
+    },
+  ],
+  "topLevelNavbarItems": [],
+}
+`;
+
 exports[`normalize-page > en-US getting-started 1`] = `
 {
   "activeIndex": 0,
@@ -7,8 +196,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
     {
       "children": [
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "getting-started",
           "route": "/docs/getting-started",
@@ -16,8 +204,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "options",
           "route": "/docs/options",
@@ -25,8 +212,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "global-configuration",
           "route": "/docs/global-configuration",
@@ -34,8 +220,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "data-fetching",
           "route": "/docs/data-fetching",
@@ -43,8 +228,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "error-handling",
           "route": "/docs/error-handling",
@@ -52,8 +236,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "revalidation",
           "route": "/docs/revalidation",
@@ -61,8 +244,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "conditional-fetching",
           "route": "/docs/conditional-fetching",
@@ -70,8 +252,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "arguments",
           "route": "/docs/arguments",
@@ -79,8 +260,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "mutation",
           "route": "/docs/mutation",
@@ -88,8 +268,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "pagination",
           "route": "/docs/pagination",
@@ -97,8 +276,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "prefetching",
           "route": "/docs/prefetching",
@@ -106,8 +284,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "with-nextjs",
           "route": "/docs/with-nextjs",
@@ -115,8 +292,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "typescript",
           "route": "/docs/typescript",
@@ -124,8 +300,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "suspense",
           "route": "/docs/suspense",
@@ -133,8 +308,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "middleware",
           "route": "/docs/middleware",
@@ -144,8 +318,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
         {
           "children": [
             {
-              "children": undefined,
-              "hidden": undefined,
+              "kind": "MdxPage",
               "locale": "en-US",
               "name": "cache",
               "route": "/docs/advanced/cache",
@@ -153,8 +326,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
               "type": "doc",
             },
             {
-              "children": undefined,
-              "hidden": undefined,
+              "kind": "MdxPage",
               "locale": "en-US",
               "name": "performance",
               "route": "/docs/advanced/performance",
@@ -162,8 +334,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
               "type": "doc",
             },
             {
-              "children": undefined,
-              "hidden": undefined,
+              "kind": "MdxPage",
               "locale": "en-US",
               "name": "react-native",
               "route": "/docs/advanced/react-native",
@@ -171,15 +342,14 @@ exports[`normalize-page > en-US getting-started 1`] = `
               "type": "doc",
             },
           ],
-          "hidden": undefined,
+          "kind": "Folder",
           "name": "advanced",
           "route": "/docs/advanced",
           "title": "Advanced",
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "change-log",
           "route": "/docs/change-log",
@@ -187,15 +357,14 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
       ],
-      "hidden": undefined,
+      "kind": "Folder",
       "name": "docs",
       "route": "/docs",
       "title": "Docs",
       "type": "nav",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "getting-started",
       "route": "/docs/getting-started",
@@ -205,21 +374,34 @@ exports[`normalize-page > en-US getting-started 1`] = `
   ],
   "activeThemeContext": {
     "breadcrumb": true,
+    "collapsed": false,
     "footer": true,
     "layout": "default",
     "navbar": true,
     "pagination": true,
     "sidebar": true,
+    "timestamp": true,
     "toc": true,
     "typesetting": "default",
   },
   "activeType": "doc",
   "directories": [
     {
+      "frontMatter": {
+        "title": "React Hooks for Data Fetching",
+      },
+      "hidden": true,
+      "kind": "MdxPage",
+      "locale": "en-US",
+      "name": "index",
+      "route": "/",
+      "title": "Introduction",
+      "type": "nav",
+    },
+    {
       "children": [
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "getting-started",
           "route": "/docs/getting-started",
@@ -227,8 +409,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "options",
           "route": "/docs/options",
@@ -236,8 +417,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "global-configuration",
           "route": "/docs/global-configuration",
@@ -245,8 +425,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "data-fetching",
           "route": "/docs/data-fetching",
@@ -254,8 +433,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "error-handling",
           "route": "/docs/error-handling",
@@ -263,8 +441,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "revalidation",
           "route": "/docs/revalidation",
@@ -272,8 +449,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "conditional-fetching",
           "route": "/docs/conditional-fetching",
@@ -281,8 +457,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "arguments",
           "route": "/docs/arguments",
@@ -290,8 +465,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "mutation",
           "route": "/docs/mutation",
@@ -299,8 +473,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "pagination",
           "route": "/docs/pagination",
@@ -308,8 +481,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "prefetching",
           "route": "/docs/prefetching",
@@ -317,8 +489,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "with-nextjs",
           "route": "/docs/with-nextjs",
@@ -326,8 +497,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "typescript",
           "route": "/docs/typescript",
@@ -335,8 +505,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "suspense",
           "route": "/docs/suspense",
@@ -344,8 +513,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "middleware",
           "route": "/docs/middleware",
@@ -355,8 +523,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
         {
           "children": [
             {
-              "children": undefined,
-              "hidden": undefined,
+              "kind": "MdxPage",
               "locale": "en-US",
               "name": "cache",
               "route": "/docs/advanced/cache",
@@ -364,8 +531,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
               "type": "doc",
             },
             {
-              "children": undefined,
-              "hidden": undefined,
+              "kind": "MdxPage",
               "locale": "en-US",
               "name": "performance",
               "route": "/docs/advanced/performance",
@@ -373,8 +539,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
               "type": "doc",
             },
             {
-              "children": undefined,
-              "hidden": undefined,
+              "kind": "MdxPage",
               "locale": "en-US",
               "name": "react-native",
               "route": "/docs/advanced/react-native",
@@ -382,15 +547,14 @@ exports[`normalize-page > en-US getting-started 1`] = `
               "type": "doc",
             },
           ],
-          "hidden": undefined,
+          "kind": "Folder",
           "name": "advanced",
           "route": "/docs/advanced",
           "title": "Advanced",
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "change-log",
           "route": "/docs/change-log",
@@ -398,7 +562,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
       ],
-      "hidden": undefined,
+      "kind": "Folder",
       "name": "docs",
       "route": "/docs",
       "title": "Docs",
@@ -407,12 +571,11 @@ exports[`normalize-page > en-US getting-started 1`] = `
     {
       "children": [
         {
-          "children": undefined,
           "frontMatter": {
             "full": true,
             "title": "Basic Usage",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "basic",
           "route": "/examples/basic",
@@ -420,12 +583,11 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
           "frontMatter": {
             "full": true,
             "title": "Authentication",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "auth",
           "route": "/examples/auth",
@@ -433,12 +595,11 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
           "frontMatter": {
             "full": true,
             "title": "Infinite Loading",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "infinite-loading",
           "route": "/examples/infinite-loading",
@@ -446,12 +607,11 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
           "frontMatter": {
             "full": true,
             "title": "Error Handling",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "error-handling",
           "route": "/examples/error-handling",
@@ -459,12 +619,11 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
           "frontMatter": {
             "full": true,
             "title": "Next.js SSR",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "ssr",
           "route": "/examples/ssr",
@@ -472,7 +631,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
       ],
-      "hidden": undefined,
+      "kind": "Folder",
       "name": "examples",
       "route": "/examples",
       "title": "Examples",
@@ -481,12 +640,11 @@ exports[`normalize-page > en-US getting-started 1`] = `
     {
       "children": [
         {
-          "children": undefined,
           "frontMatter": {
             "description": "Almost 2 years ago we open sourced SWR, the tiny data-fetching React library that people love. Today we are reaching another milestone: the 1.0 version of SWR.",
             "image": "https://assets.vercel.com/image/upload/v1630059453/swr/v1.png",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "swr-v1",
           "route": "/blog/swr-v1",
@@ -494,7 +652,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
           "type": "doc",
         },
       ],
-      "hidden": undefined,
+      "kind": "Folder",
       "name": "blog",
       "route": "/blog",
       "title": "Blog",
@@ -504,8 +662,19 @@ exports[`normalize-page > en-US getting-started 1`] = `
   "docsDirectories": [],
   "flatDirectories": [
     {
-      "children": undefined,
-      "hidden": undefined,
+      "frontMatter": {
+        "title": "React Hooks for Data Fetching",
+      },
+      "hidden": true,
+      "kind": "MdxPage",
+      "locale": "en-US",
+      "name": "index",
+      "route": "/",
+      "title": "Introduction",
+      "type": "nav",
+    },
+    {
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "getting-started",
       "route": "/docs/getting-started",
@@ -513,8 +682,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "options",
       "route": "/docs/options",
@@ -522,8 +690,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "global-configuration",
       "route": "/docs/global-configuration",
@@ -531,8 +698,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "data-fetching",
       "route": "/docs/data-fetching",
@@ -540,8 +706,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "error-handling",
       "route": "/docs/error-handling",
@@ -549,8 +714,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "revalidation",
       "route": "/docs/revalidation",
@@ -558,8 +722,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "conditional-fetching",
       "route": "/docs/conditional-fetching",
@@ -567,8 +730,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "arguments",
       "route": "/docs/arguments",
@@ -576,8 +738,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "mutation",
       "route": "/docs/mutation",
@@ -585,8 +746,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "pagination",
       "route": "/docs/pagination",
@@ -594,8 +754,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "prefetching",
       "route": "/docs/prefetching",
@@ -603,8 +762,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "with-nextjs",
       "route": "/docs/with-nextjs",
@@ -612,8 +770,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "typescript",
       "route": "/docs/typescript",
@@ -621,8 +778,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "suspense",
       "route": "/docs/suspense",
@@ -630,8 +786,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "middleware",
       "route": "/docs/middleware",
@@ -639,8 +794,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "cache",
       "route": "/docs/advanced/cache",
@@ -648,8 +802,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "performance",
       "route": "/docs/advanced/performance",
@@ -657,8 +810,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "react-native",
       "route": "/docs/advanced/react-native",
@@ -666,8 +818,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "change-log",
       "route": "/docs/change-log",
@@ -675,12 +826,11 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Basic Usage",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "basic",
       "route": "/examples/basic",
@@ -688,12 +838,11 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Authentication",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "auth",
       "route": "/examples/auth",
@@ -701,12 +850,11 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Infinite Loading",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "infinite-loading",
       "route": "/examples/infinite-loading",
@@ -714,12 +862,11 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Error Handling",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "error-handling",
       "route": "/examples/error-handling",
@@ -727,12 +874,11 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Next.js SSR",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "ssr",
       "route": "/examples/ssr",
@@ -740,12 +886,11 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "description": "Almost 2 years ago we open sourced SWR, the tiny data-fetching React library that people love. Today we are reaching another milestone: the 1.0 version of SWR.",
         "image": "https://assets.vercel.com/image/upload/v1630059453/swr/v1.png",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "swr-v1",
       "route": "/blog/swr-v1",
@@ -755,8 +900,8 @@ exports[`normalize-page > en-US getting-started 1`] = `
   ],
   "flatDocsDirectories": [
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "getting-started",
       "route": "/docs/getting-started",
@@ -764,8 +909,8 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "options",
       "route": "/docs/options",
@@ -773,8 +918,8 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "global-configuration",
       "route": "/docs/global-configuration",
@@ -782,8 +927,8 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "data-fetching",
       "route": "/docs/data-fetching",
@@ -791,8 +936,8 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "error-handling",
       "route": "/docs/error-handling",
@@ -800,8 +945,8 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "revalidation",
       "route": "/docs/revalidation",
@@ -809,8 +954,8 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "conditional-fetching",
       "route": "/docs/conditional-fetching",
@@ -818,8 +963,8 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "arguments",
       "route": "/docs/arguments",
@@ -827,8 +972,8 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "mutation",
       "route": "/docs/mutation",
@@ -836,8 +981,8 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "pagination",
       "route": "/docs/pagination",
@@ -845,8 +990,8 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "prefetching",
       "route": "/docs/prefetching",
@@ -854,8 +999,8 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "with-nextjs",
       "route": "/docs/with-nextjs",
@@ -863,8 +1008,8 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "typescript",
       "route": "/docs/typescript",
@@ -872,8 +1017,8 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "suspense",
       "route": "/docs/suspense",
@@ -881,8 +1026,8 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "middleware",
       "route": "/docs/middleware",
@@ -890,8 +1035,8 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "cache",
       "route": "/docs/advanced/cache",
@@ -899,8 +1044,8 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "performance",
       "route": "/docs/advanced/performance",
@@ -908,8 +1053,8 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "react-native",
       "route": "/docs/advanced/react-native",
@@ -917,8 +1062,8 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "change-log",
       "route": "/docs/change-log",
@@ -926,12 +1071,12 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Basic Usage",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "basic",
       "route": "/examples/basic",
@@ -939,12 +1084,12 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Authentication",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "auth",
       "route": "/examples/auth",
@@ -952,12 +1097,12 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Infinite Loading",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "infinite-loading",
       "route": "/examples/infinite-loading",
@@ -965,12 +1110,12 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Error Handling",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "error-handling",
       "route": "/examples/error-handling",
@@ -978,12 +1123,12 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Next.js SSR",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "ssr",
       "route": "/examples/ssr",
@@ -991,12 +1136,12 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "description": "Almost 2 years ago we open sourced SWR, the tiny data-fetching React library that people love. Today we are reaching another milestone: the 1.0 version of SWR.",
         "image": "https://assets.vercel.com/image/upload/v1630059453/swr/v1.png",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "swr-v1",
       "route": "/blog/swr-v1",
@@ -1004,8 +1149,7 @@ exports[`normalize-page > en-US getting-started 1`] = `
       "type": "doc",
     },
   ],
-  "pageDirectories": [],
-  "topLevelPageItems": [],
+  "topLevelNavbarItems": [],
 }
 `;
 
@@ -1014,11 +1158,11 @@ exports[`normalize-page > en-US home 1`] = `
   "activeIndex": 0,
   "activePath": [
     {
-      "children": undefined,
       "frontMatter": {
         "title": "React Hooks for Data Fetching",
       },
       "hidden": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "index",
       "route": "/",
@@ -1028,21 +1172,34 @@ exports[`normalize-page > en-US home 1`] = `
   ],
   "activeThemeContext": {
     "breadcrumb": true,
+    "collapsed": false,
     "footer": true,
     "layout": "default",
     "navbar": true,
     "pagination": true,
     "sidebar": true,
+    "timestamp": true,
     "toc": true,
     "typesetting": "default",
   },
   "activeType": "nav",
   "directories": [
     {
+      "frontMatter": {
+        "title": "React Hooks for Data Fetching",
+      },
+      "hidden": true,
+      "kind": "MdxPage",
+      "locale": "en-US",
+      "name": "index",
+      "route": "/",
+      "title": "Introduction",
+      "type": "nav",
+    },
+    {
       "children": [
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "getting-started",
           "route": "/docs/getting-started",
@@ -1050,8 +1207,7 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "options",
           "route": "/docs/options",
@@ -1059,8 +1215,7 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "global-configuration",
           "route": "/docs/global-configuration",
@@ -1068,8 +1223,7 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "data-fetching",
           "route": "/docs/data-fetching",
@@ -1077,8 +1231,7 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "error-handling",
           "route": "/docs/error-handling",
@@ -1086,8 +1239,7 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "revalidation",
           "route": "/docs/revalidation",
@@ -1095,8 +1247,7 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "conditional-fetching",
           "route": "/docs/conditional-fetching",
@@ -1104,8 +1255,7 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "arguments",
           "route": "/docs/arguments",
@@ -1113,8 +1263,7 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "mutation",
           "route": "/docs/mutation",
@@ -1122,8 +1271,7 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "pagination",
           "route": "/docs/pagination",
@@ -1131,8 +1279,7 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "prefetching",
           "route": "/docs/prefetching",
@@ -1140,8 +1287,7 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "with-nextjs",
           "route": "/docs/with-nextjs",
@@ -1149,8 +1295,7 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "typescript",
           "route": "/docs/typescript",
@@ -1158,8 +1303,7 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "suspense",
           "route": "/docs/suspense",
@@ -1167,8 +1311,7 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "middleware",
           "route": "/docs/middleware",
@@ -1178,8 +1321,7 @@ exports[`normalize-page > en-US home 1`] = `
         {
           "children": [
             {
-              "children": undefined,
-              "hidden": undefined,
+              "kind": "MdxPage",
               "locale": "en-US",
               "name": "cache",
               "route": "/docs/advanced/cache",
@@ -1187,8 +1329,7 @@ exports[`normalize-page > en-US home 1`] = `
               "type": "doc",
             },
             {
-              "children": undefined,
-              "hidden": undefined,
+              "kind": "MdxPage",
               "locale": "en-US",
               "name": "performance",
               "route": "/docs/advanced/performance",
@@ -1196,8 +1337,7 @@ exports[`normalize-page > en-US home 1`] = `
               "type": "doc",
             },
             {
-              "children": undefined,
-              "hidden": undefined,
+              "kind": "MdxPage",
               "locale": "en-US",
               "name": "react-native",
               "route": "/docs/advanced/react-native",
@@ -1205,15 +1345,14 @@ exports[`normalize-page > en-US home 1`] = `
               "type": "doc",
             },
           ],
-          "hidden": undefined,
+          "kind": "Folder",
           "name": "advanced",
           "route": "/docs/advanced",
           "title": "Advanced",
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "change-log",
           "route": "/docs/change-log",
@@ -1221,7 +1360,7 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
       ],
-      "hidden": undefined,
+      "kind": "Folder",
       "name": "docs",
       "route": "/docs",
       "title": "Docs",
@@ -1230,12 +1369,11 @@ exports[`normalize-page > en-US home 1`] = `
     {
       "children": [
         {
-          "children": undefined,
           "frontMatter": {
             "full": true,
             "title": "Basic Usage",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "basic",
           "route": "/examples/basic",
@@ -1243,12 +1381,11 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
           "frontMatter": {
             "full": true,
             "title": "Authentication",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "auth",
           "route": "/examples/auth",
@@ -1256,12 +1393,11 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
           "frontMatter": {
             "full": true,
             "title": "Infinite Loading",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "infinite-loading",
           "route": "/examples/infinite-loading",
@@ -1269,12 +1405,11 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
           "frontMatter": {
             "full": true,
             "title": "Error Handling",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "error-handling",
           "route": "/examples/error-handling",
@@ -1282,12 +1417,11 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
           "frontMatter": {
             "full": true,
             "title": "Next.js SSR",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "ssr",
           "route": "/examples/ssr",
@@ -1295,7 +1429,7 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
       ],
-      "hidden": undefined,
+      "kind": "Folder",
       "name": "examples",
       "route": "/examples",
       "title": "Examples",
@@ -1304,12 +1438,11 @@ exports[`normalize-page > en-US home 1`] = `
     {
       "children": [
         {
-          "children": undefined,
           "frontMatter": {
             "description": "Almost 2 years ago we open sourced SWR, the tiny data-fetching React library that people love. Today we are reaching another milestone: the 1.0 version of SWR.",
             "image": "https://assets.vercel.com/image/upload/v1630059453/swr/v1.png",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "swr-v1",
           "route": "/blog/swr-v1",
@@ -1317,7 +1450,7 @@ exports[`normalize-page > en-US home 1`] = `
           "type": "doc",
         },
       ],
-      "hidden": undefined,
+      "kind": "Folder",
       "name": "blog",
       "route": "/blog",
       "title": "Blog",
@@ -1327,8 +1460,19 @@ exports[`normalize-page > en-US home 1`] = `
   "docsDirectories": [],
   "flatDirectories": [
     {
-      "children": undefined,
-      "hidden": undefined,
+      "frontMatter": {
+        "title": "React Hooks for Data Fetching",
+      },
+      "hidden": true,
+      "kind": "MdxPage",
+      "locale": "en-US",
+      "name": "index",
+      "route": "/",
+      "title": "Introduction",
+      "type": "nav",
+    },
+    {
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "getting-started",
       "route": "/docs/getting-started",
@@ -1336,8 +1480,7 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "options",
       "route": "/docs/options",
@@ -1345,8 +1488,7 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "global-configuration",
       "route": "/docs/global-configuration",
@@ -1354,8 +1496,7 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "data-fetching",
       "route": "/docs/data-fetching",
@@ -1363,8 +1504,7 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "error-handling",
       "route": "/docs/error-handling",
@@ -1372,8 +1512,7 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "revalidation",
       "route": "/docs/revalidation",
@@ -1381,8 +1520,7 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "conditional-fetching",
       "route": "/docs/conditional-fetching",
@@ -1390,8 +1528,7 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "arguments",
       "route": "/docs/arguments",
@@ -1399,8 +1536,7 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "mutation",
       "route": "/docs/mutation",
@@ -1408,8 +1544,7 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "pagination",
       "route": "/docs/pagination",
@@ -1417,8 +1552,7 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "prefetching",
       "route": "/docs/prefetching",
@@ -1426,8 +1560,7 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "with-nextjs",
       "route": "/docs/with-nextjs",
@@ -1435,8 +1568,7 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "typescript",
       "route": "/docs/typescript",
@@ -1444,8 +1576,7 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "suspense",
       "route": "/docs/suspense",
@@ -1453,8 +1584,7 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "middleware",
       "route": "/docs/middleware",
@@ -1462,8 +1592,7 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "cache",
       "route": "/docs/advanced/cache",
@@ -1471,8 +1600,7 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "performance",
       "route": "/docs/advanced/performance",
@@ -1480,8 +1608,7 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "react-native",
       "route": "/docs/advanced/react-native",
@@ -1489,8 +1616,7 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "change-log",
       "route": "/docs/change-log",
@@ -1498,12 +1624,11 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Basic Usage",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "basic",
       "route": "/examples/basic",
@@ -1511,12 +1636,11 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Authentication",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "auth",
       "route": "/examples/auth",
@@ -1524,12 +1648,11 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Infinite Loading",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "infinite-loading",
       "route": "/examples/infinite-loading",
@@ -1537,12 +1660,11 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Error Handling",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "error-handling",
       "route": "/examples/error-handling",
@@ -1550,12 +1672,11 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Next.js SSR",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "ssr",
       "route": "/examples/ssr",
@@ -1563,12 +1684,11 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "description": "Almost 2 years ago we open sourced SWR, the tiny data-fetching React library that people love. Today we are reaching another milestone: the 1.0 version of SWR.",
         "image": "https://assets.vercel.com/image/upload/v1630059453/swr/v1.png",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "swr-v1",
       "route": "/blog/swr-v1",
@@ -1578,8 +1698,8 @@ exports[`normalize-page > en-US home 1`] = `
   ],
   "flatDocsDirectories": [
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "getting-started",
       "route": "/docs/getting-started",
@@ -1587,8 +1707,8 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "options",
       "route": "/docs/options",
@@ -1596,8 +1716,8 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "global-configuration",
       "route": "/docs/global-configuration",
@@ -1605,8 +1725,8 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "data-fetching",
       "route": "/docs/data-fetching",
@@ -1614,8 +1734,8 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "error-handling",
       "route": "/docs/error-handling",
@@ -1623,8 +1743,8 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "revalidation",
       "route": "/docs/revalidation",
@@ -1632,8 +1752,8 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "conditional-fetching",
       "route": "/docs/conditional-fetching",
@@ -1641,8 +1761,8 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "arguments",
       "route": "/docs/arguments",
@@ -1650,8 +1770,8 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "mutation",
       "route": "/docs/mutation",
@@ -1659,8 +1779,8 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "pagination",
       "route": "/docs/pagination",
@@ -1668,8 +1788,8 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "prefetching",
       "route": "/docs/prefetching",
@@ -1677,8 +1797,8 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "with-nextjs",
       "route": "/docs/with-nextjs",
@@ -1686,8 +1806,8 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "typescript",
       "route": "/docs/typescript",
@@ -1695,8 +1815,8 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "suspense",
       "route": "/docs/suspense",
@@ -1704,8 +1824,8 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "middleware",
       "route": "/docs/middleware",
@@ -1713,8 +1833,8 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "cache",
       "route": "/docs/advanced/cache",
@@ -1722,8 +1842,8 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "performance",
       "route": "/docs/advanced/performance",
@@ -1731,8 +1851,8 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "react-native",
       "route": "/docs/advanced/react-native",
@@ -1740,8 +1860,8 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "change-log",
       "route": "/docs/change-log",
@@ -1749,12 +1869,12 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Basic Usage",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "basic",
       "route": "/examples/basic",
@@ -1762,12 +1882,12 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Authentication",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "auth",
       "route": "/examples/auth",
@@ -1775,12 +1895,12 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Infinite Loading",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "infinite-loading",
       "route": "/examples/infinite-loading",
@@ -1788,12 +1908,12 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Error Handling",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "error-handling",
       "route": "/examples/error-handling",
@@ -1801,12 +1921,12 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Next.js SSR",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "ssr",
       "route": "/examples/ssr",
@@ -1814,12 +1934,12 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "description": "Almost 2 years ago we open sourced SWR, the tiny data-fetching React library that people love. Today we are reaching another milestone: the 1.0 version of SWR.",
         "image": "https://assets.vercel.com/image/upload/v1630059453/swr/v1.png",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "swr-v1",
       "route": "/blog/swr-v1",
@@ -1827,8 +1947,7 @@ exports[`normalize-page > en-US home 1`] = `
       "type": "doc",
     },
   ],
-  "pageDirectories": [],
-  "topLevelPageItems": [],
+  "topLevelNavbarItems": [],
 }
 `;
 
@@ -1839,8 +1958,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
     {
       "children": [
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "getting-started",
           "route": "/docs/getting-started",
@@ -1848,8 +1966,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "options",
           "route": "/docs/options",
@@ -1857,8 +1974,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "global-configuration",
           "route": "/docs/global-configuration",
@@ -1866,8 +1982,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "data-fetching",
           "route": "/docs/data-fetching",
@@ -1875,8 +1990,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "error-handling",
           "route": "/docs/error-handling",
@@ -1884,8 +1998,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "revalidation",
           "route": "/docs/revalidation",
@@ -1893,8 +2006,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "conditional-fetching",
           "route": "/docs/conditional-fetching",
@@ -1902,8 +2014,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "arguments",
           "route": "/docs/arguments",
@@ -1911,8 +2022,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "mutation",
           "route": "/docs/mutation",
@@ -1920,8 +2030,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "pagination",
           "route": "/docs/pagination",
@@ -1929,8 +2038,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "prefetching",
           "route": "/docs/prefetching",
@@ -1938,8 +2046,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "with-nextjs",
           "route": "/docs/with-nextjs",
@@ -1947,8 +2054,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "typescript",
           "route": "/docs/typescript",
@@ -1956,8 +2062,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "suspense",
           "route": "/docs/suspense",
@@ -1965,8 +2070,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "middleware",
           "route": "/docs/middleware",
@@ -1976,8 +2080,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
         {
           "children": [
             {
-              "children": undefined,
-              "hidden": undefined,
+              "kind": "MdxPage",
               "locale": "zh-CN",
               "name": "cache",
               "route": "/docs/advanced/cache",
@@ -1985,8 +2088,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
               "type": "doc",
             },
             {
-              "children": undefined,
-              "hidden": undefined,
+              "kind": "MdxPage",
               "locale": "zh-CN",
               "name": "performance",
               "route": "/docs/advanced/performance",
@@ -1994,8 +2096,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
               "type": "doc",
             },
             {
-              "children": undefined,
-              "hidden": undefined,
+              "kind": "MdxPage",
               "locale": "zh-CN",
               "name": "react-native",
               "route": "/docs/advanced/react-native",
@@ -2003,15 +2104,14 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
               "type": "doc",
             },
           ],
-          "hidden": undefined,
+          "kind": "Folder",
           "name": "advanced",
           "route": "/docs/advanced",
           "title": "高级",
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "change-log",
           "route": "/docs/change-log",
@@ -2019,15 +2119,14 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
       ],
-      "hidden": undefined,
+      "kind": "Folder",
       "name": "docs",
       "route": "/docs",
       "title": "文档",
       "type": "nav",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "getting-started",
       "route": "/docs/getting-started",
@@ -2037,21 +2136,34 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
   ],
   "activeThemeContext": {
     "breadcrumb": true,
+    "collapsed": false,
     "footer": true,
     "layout": "default",
     "navbar": true,
     "pagination": true,
     "sidebar": true,
+    "timestamp": true,
     "toc": true,
     "typesetting": "default",
   },
   "activeType": "doc",
   "directories": [
     {
+      "frontMatter": {
+        "title": "用于数据请求的 React Hooks 库",
+      },
+      "hidden": true,
+      "kind": "MdxPage",
+      "locale": "zh-CN",
+      "name": "index",
+      "route": "/",
+      "title": "简介",
+      "type": "nav",
+    },
+    {
       "children": [
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "getting-started",
           "route": "/docs/getting-started",
@@ -2059,8 +2171,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "options",
           "route": "/docs/options",
@@ -2068,8 +2179,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "global-configuration",
           "route": "/docs/global-configuration",
@@ -2077,8 +2187,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "data-fetching",
           "route": "/docs/data-fetching",
@@ -2086,8 +2195,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "error-handling",
           "route": "/docs/error-handling",
@@ -2095,8 +2203,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "revalidation",
           "route": "/docs/revalidation",
@@ -2104,8 +2211,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "conditional-fetching",
           "route": "/docs/conditional-fetching",
@@ -2113,8 +2219,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "arguments",
           "route": "/docs/arguments",
@@ -2122,8 +2227,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "mutation",
           "route": "/docs/mutation",
@@ -2131,8 +2235,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "pagination",
           "route": "/docs/pagination",
@@ -2140,8 +2243,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "prefetching",
           "route": "/docs/prefetching",
@@ -2149,8 +2251,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "with-nextjs",
           "route": "/docs/with-nextjs",
@@ -2158,8 +2259,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "typescript",
           "route": "/docs/typescript",
@@ -2167,8 +2267,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "suspense",
           "route": "/docs/suspense",
@@ -2176,8 +2275,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "middleware",
           "route": "/docs/middleware",
@@ -2187,8 +2285,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
         {
           "children": [
             {
-              "children": undefined,
-              "hidden": undefined,
+              "kind": "MdxPage",
               "locale": "zh-CN",
               "name": "cache",
               "route": "/docs/advanced/cache",
@@ -2196,8 +2293,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
               "type": "doc",
             },
             {
-              "children": undefined,
-              "hidden": undefined,
+              "kind": "MdxPage",
               "locale": "zh-CN",
               "name": "performance",
               "route": "/docs/advanced/performance",
@@ -2205,8 +2301,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
               "type": "doc",
             },
             {
-              "children": undefined,
-              "hidden": undefined,
+              "kind": "MdxPage",
               "locale": "zh-CN",
               "name": "react-native",
               "route": "/docs/advanced/react-native",
@@ -2214,15 +2309,14 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
               "type": "doc",
             },
           ],
-          "hidden": undefined,
+          "kind": "Folder",
           "name": "advanced",
           "route": "/docs/advanced",
           "title": "高级",
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "change-log",
           "route": "/docs/change-log",
@@ -2230,7 +2324,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
       ],
-      "hidden": undefined,
+      "kind": "Folder",
       "name": "docs",
       "route": "/docs",
       "title": "文档",
@@ -2239,12 +2333,11 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
     {
       "children": [
         {
-          "children": undefined,
           "frontMatter": {
             "full": true,
             "title": "基本用法",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "basic",
           "route": "/examples/basic",
@@ -2252,12 +2345,11 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
           "frontMatter": {
             "full": true,
             "title": "身份验证",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "auth",
           "route": "/examples/auth",
@@ -2265,12 +2357,11 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
           "frontMatter": {
             "full": true,
             "title": "无限加载",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "infinite-loading",
           "route": "/examples/infinite-loading",
@@ -2278,12 +2369,11 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
           "frontMatter": {
             "full": true,
             "title": "错误处理",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "error-handling",
           "route": "/examples/error-handling",
@@ -2291,12 +2381,11 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
           "frontMatter": {
             "full": true,
             "title": "Next.js SSR",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "ssr",
           "route": "/examples/ssr",
@@ -2304,7 +2393,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
       ],
-      "hidden": undefined,
+      "kind": "Folder",
       "name": "examples",
       "route": "/examples",
       "title": "示例",
@@ -2313,12 +2402,11 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
     {
       "children": [
         {
-          "children": undefined,
           "frontMatter": {
             "description": "大约两年前，我们开源了 SWR，大家喜爱的小型数据请求 React 库。今天，我们迎来了另一个里程碑：SWR 1.0 版本发布。",
             "image": "https://assets.vercel.com/image/upload/v1630059453/swr/v1.png",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "swr-v1",
           "route": "/blog/swr-v1",
@@ -2326,7 +2414,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
           "type": "doc",
         },
       ],
-      "hidden": undefined,
+      "kind": "Folder",
       "name": "blog",
       "route": "/blog",
       "title": "博客",
@@ -2336,8 +2424,19 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
   "docsDirectories": [],
   "flatDirectories": [
     {
-      "children": undefined,
-      "hidden": undefined,
+      "frontMatter": {
+        "title": "用于数据请求的 React Hooks 库",
+      },
+      "hidden": true,
+      "kind": "MdxPage",
+      "locale": "zh-CN",
+      "name": "index",
+      "route": "/",
+      "title": "简介",
+      "type": "nav",
+    },
+    {
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "getting-started",
       "route": "/docs/getting-started",
@@ -2345,8 +2444,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "options",
       "route": "/docs/options",
@@ -2354,8 +2452,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "global-configuration",
       "route": "/docs/global-configuration",
@@ -2363,8 +2460,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "data-fetching",
       "route": "/docs/data-fetching",
@@ -2372,8 +2468,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "error-handling",
       "route": "/docs/error-handling",
@@ -2381,8 +2476,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "revalidation",
       "route": "/docs/revalidation",
@@ -2390,8 +2484,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "conditional-fetching",
       "route": "/docs/conditional-fetching",
@@ -2399,8 +2492,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "arguments",
       "route": "/docs/arguments",
@@ -2408,8 +2500,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "mutation",
       "route": "/docs/mutation",
@@ -2417,8 +2508,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "pagination",
       "route": "/docs/pagination",
@@ -2426,8 +2516,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "prefetching",
       "route": "/docs/prefetching",
@@ -2435,8 +2524,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "with-nextjs",
       "route": "/docs/with-nextjs",
@@ -2444,8 +2532,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "typescript",
       "route": "/docs/typescript",
@@ -2453,8 +2540,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "suspense",
       "route": "/docs/suspense",
@@ -2462,8 +2548,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "middleware",
       "route": "/docs/middleware",
@@ -2471,8 +2556,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "cache",
       "route": "/docs/advanced/cache",
@@ -2480,8 +2564,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "performance",
       "route": "/docs/advanced/performance",
@@ -2489,8 +2572,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "react-native",
       "route": "/docs/advanced/react-native",
@@ -2498,8 +2580,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "change-log",
       "route": "/docs/change-log",
@@ -2507,12 +2588,11 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "基本用法",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "basic",
       "route": "/examples/basic",
@@ -2520,12 +2600,11 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "身份验证",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "auth",
       "route": "/examples/auth",
@@ -2533,12 +2612,11 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "无限加载",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "infinite-loading",
       "route": "/examples/infinite-loading",
@@ -2546,12 +2624,11 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "错误处理",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "error-handling",
       "route": "/examples/error-handling",
@@ -2559,12 +2636,11 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Next.js SSR",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "ssr",
       "route": "/examples/ssr",
@@ -2572,12 +2648,11 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "description": "大约两年前，我们开源了 SWR，大家喜爱的小型数据请求 React 库。今天，我们迎来了另一个里程碑：SWR 1.0 版本发布。",
         "image": "https://assets.vercel.com/image/upload/v1630059453/swr/v1.png",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "swr-v1",
       "route": "/blog/swr-v1",
@@ -2587,8 +2662,8 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
   ],
   "flatDocsDirectories": [
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "getting-started",
       "route": "/docs/getting-started",
@@ -2596,8 +2671,8 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "options",
       "route": "/docs/options",
@@ -2605,8 +2680,8 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "global-configuration",
       "route": "/docs/global-configuration",
@@ -2614,8 +2689,8 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "data-fetching",
       "route": "/docs/data-fetching",
@@ -2623,8 +2698,8 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "error-handling",
       "route": "/docs/error-handling",
@@ -2632,8 +2707,8 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "revalidation",
       "route": "/docs/revalidation",
@@ -2641,8 +2716,8 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "conditional-fetching",
       "route": "/docs/conditional-fetching",
@@ -2650,8 +2725,8 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "arguments",
       "route": "/docs/arguments",
@@ -2659,8 +2734,8 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "mutation",
       "route": "/docs/mutation",
@@ -2668,8 +2743,8 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "pagination",
       "route": "/docs/pagination",
@@ -2677,8 +2752,8 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "prefetching",
       "route": "/docs/prefetching",
@@ -2686,8 +2761,8 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "with-nextjs",
       "route": "/docs/with-nextjs",
@@ -2695,8 +2770,8 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "typescript",
       "route": "/docs/typescript",
@@ -2704,8 +2779,8 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "suspense",
       "route": "/docs/suspense",
@@ -2713,8 +2788,8 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "middleware",
       "route": "/docs/middleware",
@@ -2722,8 +2797,8 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "cache",
       "route": "/docs/advanced/cache",
@@ -2731,8 +2806,8 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "performance",
       "route": "/docs/advanced/performance",
@@ -2740,8 +2815,8 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "react-native",
       "route": "/docs/advanced/react-native",
@@ -2749,8 +2824,8 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "change-log",
       "route": "/docs/change-log",
@@ -2758,12 +2833,12 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "基本用法",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "basic",
       "route": "/examples/basic",
@@ -2771,12 +2846,12 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "身份验证",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "auth",
       "route": "/examples/auth",
@@ -2784,12 +2859,12 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "无限加载",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "infinite-loading",
       "route": "/examples/infinite-loading",
@@ -2797,12 +2872,12 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "错误处理",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "error-handling",
       "route": "/examples/error-handling",
@@ -2810,12 +2885,12 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Next.js SSR",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "ssr",
       "route": "/examples/ssr",
@@ -2823,12 +2898,12 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "description": "大约两年前，我们开源了 SWR，大家喜爱的小型数据请求 React 库。今天，我们迎来了另一个里程碑：SWR 1.0 版本发布。",
         "image": "https://assets.vercel.com/image/upload/v1630059453/swr/v1.png",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "swr-v1",
       "route": "/blog/swr-v1",
@@ -2836,8 +2911,7 @@ exports[`normalize-page > zh-CN getting-started 1`] = `
       "type": "doc",
     },
   ],
-  "pageDirectories": [],
-  "topLevelPageItems": [],
+  "topLevelNavbarItems": [],
 }
 `;
 
@@ -2846,11 +2920,11 @@ exports[`normalize-page > zh-CN home 1`] = `
   "activeIndex": 0,
   "activePath": [
     {
-      "children": undefined,
       "frontMatter": {
         "title": "用于数据请求的 React Hooks 库",
       },
       "hidden": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "index",
       "route": "/",
@@ -2860,21 +2934,34 @@ exports[`normalize-page > zh-CN home 1`] = `
   ],
   "activeThemeContext": {
     "breadcrumb": true,
+    "collapsed": false,
     "footer": true,
     "layout": "default",
     "navbar": true,
     "pagination": true,
     "sidebar": true,
+    "timestamp": true,
     "toc": true,
     "typesetting": "default",
   },
   "activeType": "nav",
   "directories": [
     {
+      "frontMatter": {
+        "title": "用于数据请求的 React Hooks 库",
+      },
+      "hidden": true,
+      "kind": "MdxPage",
+      "locale": "zh-CN",
+      "name": "index",
+      "route": "/",
+      "title": "简介",
+      "type": "nav",
+    },
+    {
       "children": [
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "getting-started",
           "route": "/docs/getting-started",
@@ -2882,8 +2969,7 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "options",
           "route": "/docs/options",
@@ -2891,8 +2977,7 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "global-configuration",
           "route": "/docs/global-configuration",
@@ -2900,8 +2985,7 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "data-fetching",
           "route": "/docs/data-fetching",
@@ -2909,8 +2993,7 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "error-handling",
           "route": "/docs/error-handling",
@@ -2918,8 +3001,7 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "revalidation",
           "route": "/docs/revalidation",
@@ -2927,8 +3009,7 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "conditional-fetching",
           "route": "/docs/conditional-fetching",
@@ -2936,8 +3017,7 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "arguments",
           "route": "/docs/arguments",
@@ -2945,8 +3025,7 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "mutation",
           "route": "/docs/mutation",
@@ -2954,8 +3033,7 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "pagination",
           "route": "/docs/pagination",
@@ -2963,8 +3041,7 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "prefetching",
           "route": "/docs/prefetching",
@@ -2972,8 +3049,7 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "with-nextjs",
           "route": "/docs/with-nextjs",
@@ -2981,8 +3057,7 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "typescript",
           "route": "/docs/typescript",
@@ -2990,8 +3065,7 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "suspense",
           "route": "/docs/suspense",
@@ -2999,8 +3073,7 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "middleware",
           "route": "/docs/middleware",
@@ -3010,8 +3083,7 @@ exports[`normalize-page > zh-CN home 1`] = `
         {
           "children": [
             {
-              "children": undefined,
-              "hidden": undefined,
+              "kind": "MdxPage",
               "locale": "zh-CN",
               "name": "cache",
               "route": "/docs/advanced/cache",
@@ -3019,8 +3091,7 @@ exports[`normalize-page > zh-CN home 1`] = `
               "type": "doc",
             },
             {
-              "children": undefined,
-              "hidden": undefined,
+              "kind": "MdxPage",
               "locale": "zh-CN",
               "name": "performance",
               "route": "/docs/advanced/performance",
@@ -3028,8 +3099,7 @@ exports[`normalize-page > zh-CN home 1`] = `
               "type": "doc",
             },
             {
-              "children": undefined,
-              "hidden": undefined,
+              "kind": "MdxPage",
               "locale": "zh-CN",
               "name": "react-native",
               "route": "/docs/advanced/react-native",
@@ -3037,15 +3107,14 @@ exports[`normalize-page > zh-CN home 1`] = `
               "type": "doc",
             },
           ],
-          "hidden": undefined,
+          "kind": "Folder",
           "name": "advanced",
           "route": "/docs/advanced",
           "title": "高级",
           "type": "doc",
         },
         {
-          "children": undefined,
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "change-log",
           "route": "/docs/change-log",
@@ -3053,7 +3122,7 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
       ],
-      "hidden": undefined,
+      "kind": "Folder",
       "name": "docs",
       "route": "/docs",
       "title": "文档",
@@ -3062,12 +3131,11 @@ exports[`normalize-page > zh-CN home 1`] = `
     {
       "children": [
         {
-          "children": undefined,
           "frontMatter": {
             "full": true,
             "title": "基本用法",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "basic",
           "route": "/examples/basic",
@@ -3075,12 +3143,11 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
           "frontMatter": {
             "full": true,
             "title": "身份验证",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "auth",
           "route": "/examples/auth",
@@ -3088,12 +3155,11 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
           "frontMatter": {
             "full": true,
             "title": "无限加载",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "infinite-loading",
           "route": "/examples/infinite-loading",
@@ -3101,12 +3167,11 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
           "frontMatter": {
             "full": true,
             "title": "错误处理",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "error-handling",
           "route": "/examples/error-handling",
@@ -3114,12 +3179,11 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
         {
-          "children": undefined,
           "frontMatter": {
             "full": true,
             "title": "Next.js SSR",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "en-US",
           "name": "ssr",
           "route": "/examples/ssr",
@@ -3127,7 +3191,7 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
       ],
-      "hidden": undefined,
+      "kind": "Folder",
       "name": "examples",
       "route": "/examples",
       "title": "示例",
@@ -3136,12 +3200,11 @@ exports[`normalize-page > zh-CN home 1`] = `
     {
       "children": [
         {
-          "children": undefined,
           "frontMatter": {
             "description": "大约两年前，我们开源了 SWR，大家喜爱的小型数据请求 React 库。今天，我们迎来了另一个里程碑：SWR 1.0 版本发布。",
             "image": "https://assets.vercel.com/image/upload/v1630059453/swr/v1.png",
           },
-          "hidden": undefined,
+          "kind": "MdxPage",
           "locale": "zh-CN",
           "name": "swr-v1",
           "route": "/blog/swr-v1",
@@ -3149,7 +3212,7 @@ exports[`normalize-page > zh-CN home 1`] = `
           "type": "doc",
         },
       ],
-      "hidden": undefined,
+      "kind": "Folder",
       "name": "blog",
       "route": "/blog",
       "title": "博客",
@@ -3159,8 +3222,19 @@ exports[`normalize-page > zh-CN home 1`] = `
   "docsDirectories": [],
   "flatDirectories": [
     {
-      "children": undefined,
-      "hidden": undefined,
+      "frontMatter": {
+        "title": "用于数据请求的 React Hooks 库",
+      },
+      "hidden": true,
+      "kind": "MdxPage",
+      "locale": "zh-CN",
+      "name": "index",
+      "route": "/",
+      "title": "简介",
+      "type": "nav",
+    },
+    {
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "getting-started",
       "route": "/docs/getting-started",
@@ -3168,8 +3242,7 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "options",
       "route": "/docs/options",
@@ -3177,8 +3250,7 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "global-configuration",
       "route": "/docs/global-configuration",
@@ -3186,8 +3258,7 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "data-fetching",
       "route": "/docs/data-fetching",
@@ -3195,8 +3266,7 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "error-handling",
       "route": "/docs/error-handling",
@@ -3204,8 +3274,7 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "revalidation",
       "route": "/docs/revalidation",
@@ -3213,8 +3282,7 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "conditional-fetching",
       "route": "/docs/conditional-fetching",
@@ -3222,8 +3290,7 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "arguments",
       "route": "/docs/arguments",
@@ -3231,8 +3298,7 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "mutation",
       "route": "/docs/mutation",
@@ -3240,8 +3306,7 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "pagination",
       "route": "/docs/pagination",
@@ -3249,8 +3314,7 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "prefetching",
       "route": "/docs/prefetching",
@@ -3258,8 +3322,7 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "with-nextjs",
       "route": "/docs/with-nextjs",
@@ -3267,8 +3330,7 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "typescript",
       "route": "/docs/typescript",
@@ -3276,8 +3338,7 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "suspense",
       "route": "/docs/suspense",
@@ -3285,8 +3346,7 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "middleware",
       "route": "/docs/middleware",
@@ -3294,8 +3354,7 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "cache",
       "route": "/docs/advanced/cache",
@@ -3303,8 +3362,7 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "performance",
       "route": "/docs/advanced/performance",
@@ -3312,8 +3370,7 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "react-native",
       "route": "/docs/advanced/react-native",
@@ -3321,8 +3378,7 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "change-log",
       "route": "/docs/change-log",
@@ -3330,12 +3386,11 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "基本用法",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "basic",
       "route": "/examples/basic",
@@ -3343,12 +3398,11 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "身份验证",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "auth",
       "route": "/examples/auth",
@@ -3356,12 +3410,11 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "无限加载",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "infinite-loading",
       "route": "/examples/infinite-loading",
@@ -3369,12 +3422,11 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "错误处理",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "error-handling",
       "route": "/examples/error-handling",
@@ -3382,12 +3434,11 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Next.js SSR",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "ssr",
       "route": "/examples/ssr",
@@ -3395,12 +3446,11 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "description": "大约两年前，我们开源了 SWR，大家喜爱的小型数据请求 React 库。今天，我们迎来了另一个里程碑：SWR 1.0 版本发布。",
         "image": "https://assets.vercel.com/image/upload/v1630059453/swr/v1.png",
       },
-      "hidden": undefined,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "swr-v1",
       "route": "/blog/swr-v1",
@@ -3410,8 +3460,8 @@ exports[`normalize-page > zh-CN home 1`] = `
   ],
   "flatDocsDirectories": [
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "getting-started",
       "route": "/docs/getting-started",
@@ -3419,8 +3469,8 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "options",
       "route": "/docs/options",
@@ -3428,8 +3478,8 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "global-configuration",
       "route": "/docs/global-configuration",
@@ -3437,8 +3487,8 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "data-fetching",
       "route": "/docs/data-fetching",
@@ -3446,8 +3496,8 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "error-handling",
       "route": "/docs/error-handling",
@@ -3455,8 +3505,8 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "revalidation",
       "route": "/docs/revalidation",
@@ -3464,8 +3514,8 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "conditional-fetching",
       "route": "/docs/conditional-fetching",
@@ -3473,8 +3523,8 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "arguments",
       "route": "/docs/arguments",
@@ -3482,8 +3532,8 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "mutation",
       "route": "/docs/mutation",
@@ -3491,8 +3541,8 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "pagination",
       "route": "/docs/pagination",
@@ -3500,8 +3550,8 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "prefetching",
       "route": "/docs/prefetching",
@@ -3509,8 +3559,8 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "with-nextjs",
       "route": "/docs/with-nextjs",
@@ -3518,8 +3568,8 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "typescript",
       "route": "/docs/typescript",
@@ -3527,8 +3577,8 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "suspense",
       "route": "/docs/suspense",
@@ -3536,8 +3586,8 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "middleware",
       "route": "/docs/middleware",
@@ -3545,8 +3595,8 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "cache",
       "route": "/docs/advanced/cache",
@@ -3554,8 +3604,8 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "performance",
       "route": "/docs/advanced/performance",
@@ -3563,8 +3613,8 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "react-native",
       "route": "/docs/advanced/react-native",
@@ -3572,8 +3622,8 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "change-log",
       "route": "/docs/change-log",
@@ -3581,12 +3631,12 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "基本用法",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "basic",
       "route": "/examples/basic",
@@ -3594,12 +3644,12 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "身份验证",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "auth",
       "route": "/examples/auth",
@@ -3607,12 +3657,12 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "无限加载",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "infinite-loading",
       "route": "/examples/infinite-loading",
@@ -3620,12 +3670,12 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "错误处理",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "error-handling",
       "route": "/examples/error-handling",
@@ -3633,12 +3683,12 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "full": true,
         "title": "Next.js SSR",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "en-US",
       "name": "ssr",
       "route": "/examples/ssr",
@@ -3646,12 +3696,12 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
     {
-      "children": undefined,
       "frontMatter": {
         "description": "大约两年前，我们开源了 SWR，大家喜爱的小型数据请求 React 库。今天，我们迎来了另一个里程碑：SWR 1.0 版本发布。",
         "image": "https://assets.vercel.com/image/upload/v1630059453/swr/v1.png",
       },
-      "hidden": undefined,
+      "isUnderCurrentDocsTree": true,
+      "kind": "MdxPage",
       "locale": "zh-CN",
       "name": "swr-v1",
       "route": "/blog/swr-v1",
@@ -3659,7 +3709,6 @@ exports[`normalize-page > zh-CN home 1`] = `
       "type": "doc",
     },
   ],
-  "pageDirectories": [],
-  "topLevelPageItems": [],
+  "topLevelNavbarItems": [],
 }
 `;

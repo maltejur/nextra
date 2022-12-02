@@ -1,96 +1,160 @@
-import { NextraConfig, PageMapItem } from './types'
+import {
+  NextraConfig,
+  FileMap,
+  MdxPath,
+  MetaJsonPath,
+  PageMapItem,
+  Folder,
+  MdxFile,
+  MetaJsonFile
+} from './types'
 import fs from 'graceful-fs'
-import util from 'util'
-import { getLocaleFromFilename, parseJsonFile, removeExtension } from './utils'
-import path from 'path'
+import { promisify } from 'node:util'
+import { parseFileName, parseJsonFile, sortPages, truthy } from './utils'
+import path from 'node:path'
 import slash from 'slash'
 import grayMatter from 'gray-matter'
-import { extension, findPagesDir, metaExtension } from './page-map'
 import { Compiler } from 'webpack'
+
 import { restoreCache } from './content-dump'
-const { readdir, readFile } = fs
+import { CWD, MARKDOWN_EXTENSION_REGEX, META_FILENAME } from './constants'
+import { findPagesDirectory } from './file-system'
 
-export async function collectFiles(
-  dir: string,
-  route: string = '/',
-  fileMap: Record<string, any> = {}
-): Promise<{ items: PageMapItem[]; fileMap: Record<string, any> }> {
-  const files = await util.promisify(readdir)(dir, { withFileTypes: true })
+const readdir = promisify(fs.readdir)
+const readFile = promisify(fs.readFile)
 
-  const items = (
-    await Promise.all(
-      files.map(async f => {
-        const filePath = path.resolve(dir, f.name)
-        const fileRoute = slash(
-          path.join(route, removeExtension(f.name).replace(/^index$/, ''))
-        )
+export const collectMdx = async (
+  filePath: string,
+  route = ''
+): Promise<MdxFile> => {
+  const { name, locale } = parseFileName(filePath)
 
-        if (f.isDirectory()) {
-          if (fileRoute === '/api') return null
-          const { items: children } = await collectFiles(
-            filePath,
-            fileRoute,
-            fileMap
-          )
-          if (!children || !children.length) return null
-          return {
-            name: f.name,
-            children,
-            route: fileRoute
-          }
-        } else if (extension.test(f.name)) {
-          const locale = getLocaleFromFilename(f.name)
-          const fileContents = await util.promisify(readFile)(filePath, 'utf-8')
-          const { data } = grayMatter(fileContents)
-          if (Object.keys(data).length) {
-            fileMap[filePath] = {
-              name: removeExtension(f.name),
-              route: fileRoute,
-              frontMatter: data,
-              locale
-            }
-            return fileMap[filePath]
-          }
-          fileMap[filePath] = {
-            name: removeExtension(f.name),
-            route: fileRoute,
-            locale
-          }
-          return fileMap[filePath]
-        } else if (metaExtension.test(f.name)) {
-          const content = await util.promisify(readFile)(filePath, 'utf-8')
-          const meta = parseJsonFile(content, filePath)
-          // @ts-expect-error since metaExtension.test(f.name) === true
-          const locale = f.name.match(metaExtension)[1]
-          fileMap[filePath] = {
-            name: 'meta.json',
-            meta,
-            locale
-          }
-          return fileMap[filePath]
-        }
-      })
-    )
-  ).filter(Boolean)
-
+  const content = await readFile(filePath, 'utf8')
+  const { data } = grayMatter(content)
   return {
-    items,
-    fileMap
+    kind: 'MdxPage',
+    name,
+    route,
+    ...(locale && { locale }),
+    ...(Object.keys(data).length && { frontMatter: data })
   }
 }
 
-export class PageMapCache {
-  public cache: { items: PageMapItem[]; fileMap: Record<string, any> } | null
-  constructor() {
-    this.cache = { items: [], fileMap: {} }
+export async function collectFiles(
+  dir: string,
+  route = '/',
+  fileMap: FileMap = Object.create(null)
+): Promise<{ items: PageMapItem[]; fileMap: FileMap }> {
+  const files = await readdir(dir, { withFileTypes: true })
+
+  const promises = files.map(async f => {
+    const filePath = path.join(dir, f.name)
+    const isDirectory = f.isDirectory()
+    const { name, locale, ext } = isDirectory
+      ? // directory couldn't have extensions
+        { name: path.basename(filePath), locale: '', ext: '' }
+      : parseFileName(filePath)
+    const fileRoute = slash(path.join(route, name.replace(/^index$/, '')))
+
+    if (isDirectory) {
+      if (fileRoute === '/api') return
+      const { items } = await collectFiles(filePath, fileRoute, fileMap)
+      if (!items.length) return
+      return <Folder>{
+        kind: 'Folder',
+        name: f.name,
+        route: fileRoute,
+        children: items
+      }
+    }
+
+    if (MARKDOWN_EXTENSION_REGEX.test(ext)) {
+      const fp = filePath as MdxPath
+      fileMap[fp] = await collectMdx(fp, fileRoute)
+      return fileMap[fp]
+    }
+    const fileName = name + ext
+
+    if (fileName === META_FILENAME) {
+      const fp = filePath as MetaJsonPath
+      const content = await readFile(fp, 'utf8')
+      fileMap[fp] = {
+        kind: 'Meta',
+        ...(locale && { locale }),
+        data: parseJsonFile(content, fp)
+      }
+      return fileMap[fp]
+    }
+
+    if (fileName === 'meta.json') {
+      console.warn(
+        '[nextra] "meta.json" was renamed to "_meta.json". Rename the following file:',
+        path.relative(CWD, filePath)
+      )
+    }
+  })
+
+  const items = (await Promise.all(promises)).filter(truthy)
+
+  const mdxPages = items.filter(
+    (item): item is MdxFile | Folder =>
+      item.kind === 'MdxPage' || item.kind === 'Folder'
+  )
+  const locales = mdxPages
+    .filter((item): item is MdxFile => item.kind === 'MdxPage')
+    .map(item => item.locale)
+
+  for (const locale of locales) {
+    const metaIndex = items.findIndex(
+      item => item.kind === 'Meta' && item.locale === locale
+    )
+
+    const defaultMeta = sortPages(mdxPages, locale)
+
+    const metaFilename = locale
+      ? META_FILENAME.replace('.', `.${locale}.`)
+      : META_FILENAME
+
+    const metaPath = path.join(dir, metaFilename) as MetaJsonPath
+
+    if (metaIndex === -1) {
+      fileMap[metaPath] = {
+        kind: 'Meta',
+        ...(locale && { locale }),
+        data: Object.fromEntries(defaultMeta)
+      }
+      items.push(fileMap[metaPath])
+    } else {
+      const { data, ...metaFile } = items[metaIndex] as MetaJsonFile
+      fileMap[metaPath] = {
+        ...metaFile,
+        data: {
+          ...data,
+          ...Object.fromEntries(defaultMeta.filter(([key]) => !(key in data)))
+        }
+      }
+      items[metaIndex] = fileMap[metaPath]
+    }
   }
-  set(data: { items: PageMapItem[]; fileMap: Record<string, any> }) {
+
+  return { items, fileMap }
+}
+
+export class PageMapCache {
+  cache: { items: PageMapItem[]; fileMap: FileMap } | null = {
+    items: [],
+    fileMap: Object.create(null)
+  }
+
+  set(data: { items: PageMapItem[]; fileMap: FileMap }) {
     this.cache!.items = data.items
     this.cache!.fileMap = data.fileMap
   }
+
   clear() {
     this.cache = null
   }
+
   get() {
     return this.cache
   }
@@ -105,15 +169,12 @@ export class NextraPlugin {
     compiler.hooks.beforeCompile.tapAsync(
       'NextraPlugin',
       async (_, callback) => {
-        if (this.config?.unstable_flexsearch) {
+        if (this.config?.flexsearch) {
           // Restore the search data from the cache.
           restoreCache()
         }
-
-        const result = await collectFiles(
-          path.join(process.cwd(), findPagesDir()),
-          '/'
-        )
+        const PAGES_DIR = findPagesDirectory()
+        const result = await collectFiles(PAGES_DIR)
         pageMapCache.set(result)
         callback()
       }

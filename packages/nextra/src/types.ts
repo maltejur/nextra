@@ -1,60 +1,107 @@
+import { NextConfig } from 'next'
 import { Heading as MDASTHeading } from 'mdast'
 import { ProcessorOptions } from '@mdx-js/mdx'
+import { Options as RehypePrettyCodeOptions } from 'rehype-pretty-code'
+import { GrayMatterFile } from 'gray-matter'
 import { PageMapCache } from './plugin'
+import { MARKDOWN_EXTENSIONS, META_FILENAME } from './constants'
 
-export interface LoaderOptions {
-  theme: Theme
-  themeConfig: string
+type MetaFilename = typeof META_FILENAME
+type MarkdownExtension = typeof MARKDOWN_EXTENSIONS[number]
+
+export interface LoaderOptions extends NextraConfig {
+  pageImport?: boolean
   locales: string[]
   defaultLocale: string
-  unstable_staticImage: boolean
-  unstable_flexsearch: boolean
-  mdxOptions: Pick<ProcessorOptions, 'rehypePlugins' | 'remarkPlugins'>
   pageMapCache: PageMapCache
+  newNextLinkBehavior?: boolean
 }
 
-export interface PageMapItem {
+export interface Folder<FileType = PageMapItem> {
+  kind: 'Folder'
+  name: string
+  route: string
+  children: FileType[]
+}
+
+export type MetaJsonFile = {
+  kind: 'Meta'
+  locale?: string
+  data: {
+    [fileName: string]: Meta
+  }
+}
+
+export type FrontMatter = GrayMatterFile<string>['data']
+export type Meta = string | Record<string, any>
+
+export type MdxFile = {
+  kind: 'MdxPage'
   name: string
   route: string
   locale?: string
-  children?: PageMapItem[]
-  timestamp?: number
-  frontMatter?: Record<string, any>
-  meta?: Record<string, any>
-  active?: boolean
+  frontMatter?: FrontMatter
+}
+
+export type MetaJsonPath = `${string}/${MetaFilename}`
+export type MdxPath = `${string}.${MarkdownExtension}`
+
+export type FileMap = {
+  [jsonPath: MetaJsonPath]: MetaJsonFile
+  [mdxPath: MdxPath]: MdxFile
+}
+
+export type PageMapItem = Folder | MdxFile | MetaJsonFile
+
+// PageMapItem without MetaJsonFile and with its meta from _meta.json
+export type Page = (MdxFile | Folder<Page>) & {
+  meta?: Exclude<Meta, string>
 }
 
 export type Heading = MDASTHeading & {
   value: string
 }
 
-export interface PageOpt {
-  filename: string
+export type PageOpts = {
+  filePath: string
   route: string
-  meta: Record<string, any>
+  frontMatter: FrontMatter
   pageMap: PageMapItem[]
-  titleText: string | null
-  headings?: Heading[]
-  hasH1: boolean
+  title: string
+  headings: Heading[]
+  hasJsxInH1?: boolean
+  timestamp?: number
+  flexsearch?: Flexsearch
+  newNextLinkBehavior?: boolean
+  readingTime?: ReadingTime
 }
 
-export type PageMapResult = [
-  pageMap: PageMapItem[],
-  route: string,
-  title: string
-]
+export type ReadingTime = {
+  text: string
+  minutes: number
+  time: number
+  words: number
+}
 
 type Theme = string
+type Flexsearch = boolean | { codeblocks: boolean }
 
 export type NextraConfig = {
   theme: Theme
-  themeConfig: string
-  unstable_flexsearch: boolean
-  unstable_staticImage?: boolean
+  themeConfig?: string
+  defaultShowCopyCode?: boolean
+  flexsearch?: Flexsearch
+  staticImage?: boolean
+  readingTime?: boolean
+  mdxOptions?: Pick<ProcessorOptions, 'rehypePlugins' | 'remarkPlugins'> & {
+    rehypePrettyCodeOptions?: Partial<RehypePrettyCodeOptions>
+  }
 }
 
-export type withNextra = (
+export type Nextra = (
   ...args: [NextraConfig] | [theme: Theme, themeConfig: string]
-) => (nextConfig: Record<string, any>) => {}
+) => (nextConfig: NextConfig) => NextConfig
 
-export default withNextra
+const nextra: Nextra = () => () => ({})
+
+export default nextra

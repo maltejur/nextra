@@ -1,27 +1,11 @@
 import { Processor } from '@mdx-js/mdx/lib/core'
+import { visit } from 'unist-util-visit'
+import { Plugin } from 'unified'
 import { Root, Heading, Parent } from 'mdast'
+import { PageOpts } from '../types'
 
-export interface HeadingMeta {
-  titleText?: string
-  hasH1: boolean
-  headings: Heading[]
-}
-
-function visit(
-  node: any,
-  tester: (node: any) => boolean,
-  handler: (node: any) => any
-) {
-  if (tester(node)) {
-    handler(node)
-  }
-  if (node.children) {
-    node.children.forEach((n: any) => visit(n, tester, handler))
-  }
-}
-
-export function getFlattenedValue(node: Parent): string {
-  return node.children
+export const getFlattenedValue = (node: Parent): string =>
+  node.children
     .map(child =>
       'children' in child
         ? getFlattenedValue(child)
@@ -30,44 +14,42 @@ export function getFlattenedValue(node: Parent): string {
         : ''
     )
     .join('')
-}
 
-export default function remarkHeadings(this: Processor) {
-  const data = this.data() as any
-  return (tree: Root, _file: any, done: () => void) => {
+export const remarkHeadings: Plugin<[], Root> = function (this: Processor) {
+  const data = this.data() as {
+    headingMeta: Pick<PageOpts, 'headings' | 'hasJsxInH1'>
+  }
+  return (tree, _file, done) => {
     visit(
       tree,
-      node => {
+      [
         // Match headings and <details>
-        return (
-          node.type === 'heading' ||
-          node.name === 'summary' ||
-          node.name === 'details'
-        )
-      },
+        { type: 'heading' },
+        { name: 'summary' },
+        { name: 'details' }
+      ],
       node => {
         if (node.type === 'heading') {
+          const hasJsxInH1 =
+            node.depth === 1 &&
+            Array.isArray(node.children) &&
+            node.children.some(
+              (child: { type: string }) => child.type === 'mdxJsxTextElement'
+            )
           const heading = {
             ...(node as Heading),
             value: getFlattenedValue(node)
           }
-          const headingMeta = data.headingMeta as HeadingMeta
-          if (node.depth === 1) {
-            headingMeta.hasH1 = true
-            if (Array.isArray(node.children) && node.children.length === 1) {
-              const child = node.children[0]
-              if (child.type === 'text') {
-                headingMeta.titleText = child.value
-              }
-            }
+          data.headingMeta.headings.push(heading)
+          if (hasJsxInH1) {
+            data.headingMeta.hasJsxInH1 = true
           }
+          return
+        }
 
-          headingMeta.headings.push(heading)
-        } else if (node.name === 'summary' || node.name === 'details') {
-          // Replace the <summary> and <details> with customized components.
-          if (node.data) {
-            delete node.data._mdxExplicitJsx
-          }
+        // Replace the <summary> and <details> with customized components.
+        if (node.data) {
+          delete node.data._mdxExplicitJsx
         }
       }
     )
